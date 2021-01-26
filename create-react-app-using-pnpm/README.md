@@ -51,4 +51,4 @@ install `pnpm` locally ¯\\_(ツ)_/¯
 ...
 
 
-## STILL CAN'T FIND A WAY TO USE `PNPM` GLOBALLY
+### STILL CAN'T FIND A WAY TO USE `PNPM` GLOBALLY
