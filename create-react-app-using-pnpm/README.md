@@ -39,7 +39,7 @@ or if it lives in user writable dir
 1. `me=$(whoami); sudo setfacl -m u:"$me":rw $PACKAGE_JSON` or `sudo chmod o+rw $PACKAGE_JSON`
 2. `sed s/$(pnpm -v)/$(/bin/npm -v)/ $PACKAGE_JSON > /tmp/r`
 3. `cat /tmp/r > $PACKAGE_JSON; rm /tmp/r`
-4. `sudo setfacl -b $PACKAGE_JSON` or `sudo chmod o-rw $PACKAGE_JSON`
+4. `sudo setfacl -b $PACKAGE_JSON` or `sudo chmod o-w $PACKAGE_JSON`
 
 ~~This also uses `sudo` but not as scary as **Solution 1**~~
 After fixing error, there are now more `sudo`s. Not good.
