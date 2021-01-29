@@ -23,9 +23,11 @@ Note: the project was bootstrapped with an old unsupported version of tools.
 Please update to Node >=10 and npm >=6 to get supported tools in new projects.
 ```
 
-### Solution 1
 - Replace `pnpm` version with `npm -v` in `package.json`
 
+Despite the following solutions, it's just easier to manually edit `package.json`
+
+### Solution 1
 1. `PACKAGE_JSON=$(dirname $(which pnpm))/$(dirname $(readlink $(which pnpm)))/../package.json` \
 2. `sudo sed -i s/$(pnpm -v)/$(/bin/npm -v)/ $PACKAGE_JSON`
 
